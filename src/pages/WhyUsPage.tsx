@@ -1,19 +1,15 @@
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import ProductShowcase from "@/components/ProductShowcase";
-import WhyUs from "@/components/WhyUs";
 import Footer from "@/components/Footer";
+import WhyUs from "@/components/WhyUs";
 
-const Index = () => {
+const WhyUsPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <Hero />
-      <ProductShowcase />
       <WhyUs />
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default WhyUsPage;
