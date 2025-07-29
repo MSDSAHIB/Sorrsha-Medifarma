@@ -23,7 +23,7 @@ const Hero = () => {
                 <span className="text-primary block">Critical Care</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
-                Trusted by hospitals and military units worldwide, Sorrsha Medifarma delivers 
+                Trusted by hospitals and military units worldwide, Sorrsha Medipharma delivers 
                 cutting-edge medical equipment and pharmaceuticals for life-saving care.
               </p>
             </div>

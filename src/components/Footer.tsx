@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <Activity className="h-8 w-8 text-primary-glow" />
-              <span className="text-xl font-bold">Sorrsha Medifarma</span>
+              <span className="text-xl font-bold">Sorrsha Medipharma</span>
             </Link>
             <p className="text-muted-foreground">
               Advancing healthcare through innovative medical solutions for hospitals and military operations worldwide.
@@ -73,7 +73,7 @@ const Footer = () => {
 
         <div className="border-t border-muted-foreground/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Sorrsha Medifarma. All rights reserved.
+            © 2024 Sorrsha Medipharma. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="#" className="text-muted-foreground hover:text-primary-glow transition-colors text-sm">

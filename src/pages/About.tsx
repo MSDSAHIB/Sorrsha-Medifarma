@@ -12,7 +12,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              About Sorrsha Medifarma
+              About Sorrsha Medipharma
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Leading the medical industry with innovative solutions, unwavering quality, 
@@ -24,7 +24,7 @@ const About = () => {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-foreground">Our Mission</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                At Sorrsha Medifarma, we are dedicated to advancing healthcare through 
+                At Sorrsha Medipharma, we are dedicated to advancing healthcare through 
                 cutting-edge medical technology and pharmaceutical solutions. Our mission 
                 is to provide life-saving equipment and supplies to healthcare professionals 
                 when they need them most.
