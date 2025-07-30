@@ -108,6 +108,61 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Professional hover effects */
+  .professional-hover {
+    @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-elegant;
+  }
+  
+  .badge-glow {
+    @apply relative overflow-hidden;
+  }
+  
+  .badge-glow::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    transform: translateX(-100%);
+    animation: shimmer 2s infinite;
+  }
+  
+  .text-shimmer {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-500 ease-in-out hover:shadow-glow hover:-translate-y-2;
+  }
+  
+  .smooth-fade {
+    @apply opacity-0 translate-y-4 transition-all duration-700 ease-out;
+  }
+  
+  .smooth-fade.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }

@@ -21,9 +21,9 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight text-balance">
                 Advanced Medical Solutions for 
-                <span className="text-primary block">Critical Care</span>
+                <span className="text-primary block text-shimmer">Critical Care</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
                 Trusted by hospitals and military units worldwide, Sorrsha Medipharma delivers 
