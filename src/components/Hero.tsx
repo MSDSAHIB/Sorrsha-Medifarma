@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Award, Users } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-medical.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero">
       <div className="absolute inset-0">
@@ -29,11 +32,11 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button variant="hero" size="lg" className="group">
+              <Button variant="hero" size="lg" className="group" onClick={() => navigate('/products')}>
                 Explore Products
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" onClick={() => navigate('/contact')}>
                 Request Catalog
               </Button>
             </div>

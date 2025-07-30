@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import medicalEquipment from "@/assets/medical-equipment-1.jpg";
 import surgicalInstruments from "@/assets/surgical-instruments.jpg";
 import militaryKit from "@/assets/military-medical-kit.jpg";
 
 const ProductShowcase = () => {
+  const navigate = useNavigate();
+  
   const products = [
     {
       title: "Hospital Equipment",
@@ -65,7 +68,7 @@ const ProductShowcase = () => {
                     ))}
                   </ul>
                   
-                  <Button variant="outline" className="w-full group">
+                  <Button variant="outline" className="w-full group" onClick={() => navigate('/products')}>
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -76,7 +79,7 @@ const ProductShowcase = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg">
+          <Button variant="hero" size="lg" onClick={() => navigate('/products')}>
             View All Products
           </Button>
         </div>
