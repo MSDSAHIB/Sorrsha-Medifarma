@@ -41,6 +41,25 @@ const Hero = () => {
               </Button>
             </div>
 
+            {/* Featured Product Categories */}
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <h3 className="text-lg font-semibold text-foreground mb-4">Explore Our Key Products</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer" onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-sm text-foreground font-medium">Medicine & First Aid Equipment</span>
+                </div>
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer" onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-accent rounded-full"></div>
+                  <span className="text-sm text-foreground font-medium">Senior Citizen Supporting Kits</span>
+                </div>
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer" onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-sm text-foreground font-medium">Combat Operation & Rescue Equipment</span>
+                </div>
+              </div>
+            </div>
+
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
               <div className="text-center">
                 <Shield className="h-8 w-8 text-primary mx-auto mb-2" />
