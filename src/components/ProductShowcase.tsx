@@ -27,6 +27,24 @@ const ProductShowcase = () => {
       description: "Rugged, field-tested medical supplies designed for military and emergency response.",
       image: militaryKit,
       features: ["Trauma Kits", "Field Supplies", "Emergency Equipment"]
+    },
+    {
+      title: "Combat Operation & Rescue Equipment",
+      description: "Specialized diagnostic and rescue equipment for combat operations and emergency response.",
+      image: medicalEquipment,
+      features: ["Rescue Equipment", "Operation Diagnostic Tools", "Combat Medical Gear"]
+    },
+    {
+      title: "Medicine & First Aid Equipment",
+      description: "Complete range of medicines and first aid supplies for immediate medical response.",
+      image: surgicalInstruments,
+      features: ["Emergency Medicines", "First Aid Kits", "Medical Supplies"]
+    },
+    {
+      title: "Senior Citizen Supporting Kits",
+      description: "Comprehensive support kits and accessories designed specifically for elderly care.",
+      image: militaryKit,
+      features: ["Mobility Aids", "Health Monitoring", "Daily Care Accessories"]
     }
   ];
 
