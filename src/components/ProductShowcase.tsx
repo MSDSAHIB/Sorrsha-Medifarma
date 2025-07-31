@@ -89,7 +89,14 @@ const ProductShowcase = () => {
                     ))}
                   </ul>
                   
-                  <Button variant="outline" className="w-full group" onClick={() => navigate('/products')}>
+                  <Button 
+                    variant="outline" 
+                    className="w-full group hover:bg-primary hover:text-primary-foreground transition-all duration-300" 
+                    onClick={() => {
+                      console.log('Learn More button clicked for:', product.title);
+                      navigate('/products');
+                    }}
+                  >
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -100,7 +107,14 @@ const ProductShowcase = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg" onClick={() => navigate('/products')}>
+          <Button 
+            variant="hero" 
+            size="lg" 
+            onClick={() => {
+              console.log('View All Products button clicked');
+              navigate('/products');
+            }}
+          >
             View All Products
           </Button>
         </div>

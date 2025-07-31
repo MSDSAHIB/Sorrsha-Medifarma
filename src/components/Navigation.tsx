@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Activity } from "lucide-react";
+import medicalLogo from "@/assets/medical-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -22,8 +24,8 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Activity className="h-8 w-8 text-primary" />
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={medicalLogo} alt="Sorrsha Medipharma Logo" className="h-10 w-10" />
             <span className="text-xl font-bold text-foreground">Sorrsha Medipharma</span>
           </Link>
 
@@ -44,7 +46,7 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero">Get Quote</Button>
+            <Button variant="hero" onClick={() => navigate('/contact')}>Get Quote</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -76,7 +78,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 pt-2">
-                <Button variant="hero" className="w-full">Get Quote</Button>
+                <Button variant="hero" className="w-full" onClick={() => navigate('/contact')}>Get Quote</Button>
               </div>
             </div>
           </div>
