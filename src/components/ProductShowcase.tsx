@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import medicalEquipment from "@/assets/medical-equipment-1.jpg";
 import surgicalInstruments from "@/assets/surgical-instruments.jpg";
 import militaryKit from "@/assets/military-medical-kit.jpg";
+import combatRescueEquipment from "@/assets/combat-rescue-equipment.jpg";
+import medicineFirstAid from "@/assets/medicine-first-aid.jpg";
+import seniorCareKit from "@/assets/senior-care-kit.jpg";
 
 const ProductShowcase = () => {
   const navigate = useNavigate();
@@ -31,19 +34,19 @@ const ProductShowcase = () => {
     {
       title: "Combat Operation & Rescue Equipment",
       description: "Specialized diagnostic and rescue equipment for combat operations and emergency response.",
-      image: medicalEquipment,
+      image: combatRescueEquipment,
       features: ["Rescue Equipment", "Operation Diagnostic Tools", "Combat Medical Gear"]
     },
     {
       title: "Medicine & First Aid Equipment",
       description: "Complete range of medicines and first aid supplies for immediate medical response.",
-      image: surgicalInstruments,
+      image: medicineFirstAid,
       features: ["Emergency Medicines", "First Aid Kits", "Medical Supplies"]
     },
     {
       title: "Senior Citizen Supporting Kits",
       description: "Comprehensive support kits and accessories designed specifically for elderly care.",
-      image: militaryKit,
+      image: seniorCareKit,
       features: ["Mobility Aids", "Health Monitoring", "Daily Care Accessories"]
     }
   ];
