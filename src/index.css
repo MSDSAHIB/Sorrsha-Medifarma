@@ -177,6 +177,7 @@ All colors MUST be HSL.
     background-size: 200% 100%;
     animation: gradient-shift 3s ease-in-out infinite;
   }
+}
 
 @layer utilities {
   .text-balance {
