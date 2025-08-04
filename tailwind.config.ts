@@ -77,11 +77,15 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-rainbow': 'var(--gradient-rainbow)',
+				'gradient-vibrant': 'var(--gradient-vibrant)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
-				'glow': 'var(--shadow-glow)'
+				'glow': 'var(--shadow-glow)',
+				'colorful': 'var(--shadow-colorful)',
+				'rainbow': 'var(--shadow-rainbow)'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -145,6 +149,54 @@ export default {
 						transform: 'scale(1)',
 						opacity: '1'
 					}
+				},
+				'colorful-pulse': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px hsl(210 100% 45% / 0.5)'
+					},
+					'25%': {
+						boxShadow: '0 0 30px hsl(280 100% 65% / 0.6)'
+					},
+					'50%': {
+						boxShadow: '0 0 25px hsl(168 100% 45% / 0.5)'
+					},
+					'75%': {
+						boxShadow: '0 0 35px hsl(45 100% 55% / 0.6)'
+					}
+				},
+				'rainbow-rotate': {
+					'0%': {
+						filter: 'hue-rotate(0deg)'
+					},
+					'100%': {
+						filter: 'hue-rotate(360deg)'
+					}
+				},
+				'float-colors': {
+					'0%, 100%': {
+						transform: 'translateY(0px) scale(1)',
+						filter: 'hue-rotate(0deg)'
+					},
+					'25%': {
+						transform: 'translateY(-10px) scale(1.05)',
+						filter: 'hue-rotate(90deg)'
+					},
+					'50%': {
+						transform: 'translateY(-5px) scale(1.02)',
+						filter: 'hue-rotate(180deg)'
+					},
+					'75%': {
+						transform: 'translateY(-15px) scale(1.03)',
+						filter: 'hue-rotate(270deg)'
+					}
+				},
+				'gradient-shift': {
+					'0%, 100%': {
+						backgroundPosition: '0% 50%'
+					},
+					'50%': {
+						backgroundPosition: '100% 50%'
+					}
 				}
 			},
 			animation: {
@@ -154,7 +206,11 @@ export default {
 				'slide-in': 'slide-in 0.5s ease-out',
 				'float': 'float 6s ease-in-out infinite',
 				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
-				'scale-in': 'scale-in 0.3s ease-out'
+				'scale-in': 'scale-in 0.3s ease-out',
+				'colorful-pulse': 'colorful-pulse 3s ease-in-out infinite',
+				'rainbow-rotate': 'rainbow-rotate 4s linear infinite',
+				'float-colors': 'float-colors 6s ease-in-out infinite',
+				'gradient-shift': 'gradient-shift 3s ease-in-out infinite'
 			}
 		}
 	},

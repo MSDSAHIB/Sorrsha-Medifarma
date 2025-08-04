@@ -40,9 +40,13 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(210 100% 45%), hsl(210 100% 65%));
     --gradient-accent: linear-gradient(135deg, hsl(168 100% 35%), hsl(168 100% 45%));
     --gradient-hero: linear-gradient(135deg, hsl(210 100% 45% / 0.1), hsl(168 100% 35% / 0.1));
+    --gradient-rainbow: linear-gradient(45deg, hsl(210 100% 45%), hsl(280 100% 65%), hsl(168 100% 45%), hsl(45 100% 55%));
+    --gradient-vibrant: linear-gradient(135deg, hsl(210 100% 45%) 0%, hsl(280 100% 65%) 25%, hsl(168 100% 45%) 50%, hsl(45 100% 55%) 75%, hsl(330 100% 65%) 100%);
     
     --shadow-elegant: 0 10px 30px -10px hsl(210 100% 45% / 0.3);
     --shadow-glow: 0 0 40px hsl(210 100% 85% / 0.4);
+    --shadow-colorful: 0 0 30px hsl(210 100% 45% / 0.6), 0 0 60px hsl(168 100% 35% / 0.4);
+    --shadow-rainbow: 0 0 20px hsl(210 100% 45% / 0.5), 0 0 40px hsl(280 100% 65% / 0.3), 0 0 60px hsl(168 100% 45% / 0.3);
 
     --radius: 0.75rem;
 
@@ -150,7 +154,29 @@ All colors MUST be HSL.
   .smooth-fade.visible {
     @apply opacity-100 translate-y-0;
   }
-}
+  
+  .colorful-glow {
+    @apply relative;
+    animation: colorful-pulse 3s ease-in-out infinite;
+  }
+  
+  .rainbow-border {
+    @apply relative overflow-hidden;
+    background: linear-gradient(135deg, hsl(var(--background)), hsl(var(--background))) padding-box,
+                linear-gradient(45deg, hsl(210 100% 45%), hsl(280 100% 65%), hsl(168 100% 45%), hsl(45 100% 55%)) border-box;
+    border: 2px solid transparent;
+    animation: rainbow-rotate 4s linear infinite;
+  }
+  
+  .floating-colors {
+    animation: float-colors 6s ease-in-out infinite;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-500 via-purple-500 to-teal-400 bg-clip-text text-transparent;
+    background-size: 200% 100%;
+    animation: gradient-shift 3s ease-in-out infinite;
+  }
 
 @layer utilities {
   .text-balance {
@@ -164,5 +190,57 @@ All colors MUST be HSL.
   }
   100% {
     transform: translateX(100%);
+  }
+}
+
+@keyframes colorful-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(210 100% 45% / 0.5);
+  }
+  25% {
+    box-shadow: 0 0 30px hsl(280 100% 65% / 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px hsl(168 100% 45% / 0.5);
+  }
+  75% {
+    box-shadow: 0 0 35px hsl(45 100% 55% / 0.6);
+  }
+}
+
+@keyframes rainbow-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes float-colors {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) scale(1.05);
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.02);
+    filter: hue-rotate(180deg);
+  }
+  75% {
+    transform: translateY(-15px) scale(1.03);
+    filter: hue-rotate(270deg);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
 }

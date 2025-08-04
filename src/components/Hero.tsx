@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight text-balance">
                 Advanced Medical Solutions for 
-                <span className="text-primary block text-shimmer">Critical Care</span>
+                <span className="block gradient-text animate-gradient-shift">Critical Care</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
                 Trusted by hospitals and military units worldwide, Sorrsha Medipharma delivers 
@@ -32,29 +32,29 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <Button variant="hero" size="lg" className="group hover:scale-105 transition-all duration-300 hover:shadow-glow" onClick={() => navigate('/products')}>
+              <Button variant="hero" size="lg" className="group hover:scale-105 transition-all duration-300 shadow-colorful hover:shadow-rainbow animate-colorful-pulse" onClick={() => navigate('/products')}>
                 Explore Products
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="hover:scale-105 transition-all duration-300 hover:bg-white/10" onClick={() => navigate('/contact')}>
+              <Button variant="outline" size="lg" className="hover:scale-105 transition-all duration-300 hover:bg-white/10 rainbow-border" onClick={() => navigate('/contact')}>
                 Request Catalog
               </Button>
             </div>
 
             {/* Featured Product Categories */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <h3 className="text-lg font-semibold text-foreground mb-4">Explore Our Key Products</h3>
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 animate-fade-in rainbow-border" style={{ animationDelay: '0.6s' }}>
+              <h3 className="text-lg font-semibold text-foreground mb-4 gradient-text animate-gradient-shift">Explore Our Key Products</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in" style={{ animationDelay: '0.8s' }} onClick={() => navigate('/products')}>
-                  <div className="w-3 h-3 bg-primary rounded-full animate-glow-pulse"></div>
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in colorful-glow" style={{ animationDelay: '0.8s' }} onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-colorful-pulse"></div>
                   <span className="text-sm text-foreground font-medium">Medicine & First Aid Equipment</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in" style={{ animationDelay: '1s' }} onClick={() => navigate('/products')}>
-                  <div className="w-3 h-3 bg-accent rounded-full animate-glow-pulse"></div>
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in colorful-glow" style={{ animationDelay: '1s' }} onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full animate-colorful-pulse"></div>
                   <span className="text-sm text-foreground font-medium">Senior Citizen Supporting Kits</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in" style={{ animationDelay: '1.2s' }} onClick={() => navigate('/products')}>
-                  <div className="w-3 h-3 bg-primary rounded-full animate-glow-pulse"></div>
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in colorful-glow" style={{ animationDelay: '1.2s' }} onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full animate-colorful-pulse"></div>
                   <span className="text-sm text-foreground font-medium">Combat Operation & Rescue Equipment</span>
                 </div>
               </div>
