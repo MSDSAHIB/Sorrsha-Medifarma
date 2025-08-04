@@ -116,7 +116,33 @@ All colors MUST be HSL.
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply font-display font-semibold;
+  }
+  
+  h1 {
+    @apply text-shimmer font-bold tracking-tight;
+  }
+  
+  h2 {
+    @apply text-primary font-semibold;
+  }
+  
+  h3 {
+    @apply text-accent font-medium;
+  }
+  
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-rainbow {
+    @apply bg-gradient-to-r from-blue-500 via-purple-500 via-pink-500 to-teal-400 bg-clip-text text-transparent;
+    background-size: 200% 100%;
+    animation: gradient-shift 4s ease-in-out infinite;
+  }
+  
+  .text-gradient-elegant {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
 }
 

@@ -65,9 +65,11 @@ export default {
 				}
 			},
 			fontFamily: {
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
-				'display': ['Playfair Display', 'serif'],
-				'body': ['Inter', 'system-ui', 'sans-serif']
+				'sans': ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+				'display': ['Space Grotesk', 'Playfair Display', 'serif'],
+				'body': ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+				'elegant': ['Playfair Display', 'serif'],
+				'modern': ['Space Grotesk', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

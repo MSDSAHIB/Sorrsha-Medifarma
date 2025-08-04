@@ -21,11 +21,11 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight text-balance">
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight text-balance font-modern text-gradient-rainbow">
                 Advanced Medical Solutions for 
-                <span className="block gradient-text animate-gradient-shift">Critical Care</span>
+                <span className="block font-elegant text-gradient-elegant">Critical Care</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl">
+              <p className="text-xl max-w-2xl font-body text-gradient-primary">
                 Trusted by hospitals and military units worldwide, Sorrsha Medipharma delivers 
                 cutting-edge medical equipment and pharmaceuticals for life-saving care.
               </p>
@@ -43,7 +43,7 @@ const Hero = () => {
 
             {/* Featured Product Categories */}
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 animate-fade-in rainbow-border" style={{ animationDelay: '0.6s' }}>
-              <h3 className="text-lg font-semibold text-foreground mb-4 gradient-text animate-gradient-shift">Explore Our Key Products</h3>
+              <h3 className="text-lg font-semibold mb-4 font-modern text-gradient-rainbow">Explore Our Key Products</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in colorful-glow" style={{ animationDelay: '0.8s' }} onClick={() => navigate('/products')}>
                   <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-colorful-pulse"></div>
@@ -82,7 +82,7 @@ const Hero = () => {
           <div className="relative animate-slide-in">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500">
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-foreground animate-fade-in" style={{ animationDelay: '0.5s' }}>Why Choose Sorrsha?</h3>
+                <h3 className="text-2xl font-bold animate-fade-in font-elegant text-gradient-elegant" style={{ animationDelay: '0.5s' }}>Why Choose Sorrsha?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3 animate-fade-in hover:translate-x-2 transition-transform duration-300" style={{ animationDelay: '0.7s' }}>
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 animate-glow-pulse"></div>
