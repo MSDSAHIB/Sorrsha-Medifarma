@@ -31,48 +31,48 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <Button variant="hero" size="lg" className="group" onClick={() => navigate('/products')}>
+            <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <Button variant="hero" size="lg" className="group hover:scale-105 transition-all duration-300 hover:shadow-glow" onClick={() => navigate('/products')}>
                 Explore Products
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" onClick={() => navigate('/contact')}>
+              <Button variant="outline" size="lg" className="hover:scale-105 transition-all duration-300 hover:bg-white/10" onClick={() => navigate('/contact')}>
                 Request Catalog
               </Button>
             </div>
 
             {/* Featured Product Categories */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 animate-fade-in" style={{ animationDelay: '0.6s' }}>
               <h3 className="text-lg font-semibold text-foreground mb-4">Explore Our Key Products</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer" onClick={() => navigate('/products')}>
-                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in" style={{ animationDelay: '0.8s' }} onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-primary rounded-full animate-glow-pulse"></div>
                   <span className="text-sm text-foreground font-medium">Medicine & First Aid Equipment</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer" onClick={() => navigate('/products')}>
-                  <div className="w-3 h-3 bg-accent rounded-full"></div>
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in" style={{ animationDelay: '1s' }} onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-accent rounded-full animate-glow-pulse"></div>
                   <span className="text-sm text-foreground font-medium">Senior Citizen Supporting Kits</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer" onClick={() => navigate('/products')}>
-                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in" style={{ animationDelay: '1.2s' }} onClick={() => navigate('/products')}>
+                  <div className="w-3 h-3 bg-primary rounded-full animate-glow-pulse"></div>
                   <span className="text-sm text-foreground font-medium">Combat Operation & Rescue Equipment</span>
                 </div>
               </div>
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
-              <div className="text-center">
-                <Shield className="h-8 w-8 text-primary mx-auto mb-2" />
+              <div className="text-center animate-fade-in hover:scale-105 transition-all duration-300" style={{ animationDelay: '1.4s' }}>
+                <Shield className="h-8 w-8 text-primary mx-auto mb-2 animate-float" />
                 <div className="text-2xl font-bold text-foreground">99.9%</div>
                 <div className="text-sm text-muted-foreground">Quality Assurance</div>
               </div>
-              <div className="text-center">
-                <Award className="h-8 w-8 text-accent mx-auto mb-2" />
+              <div className="text-center animate-fade-in hover:scale-105 transition-all duration-300" style={{ animationDelay: '1.6s' }}>
+                <Award className="h-8 w-8 text-accent mx-auto mb-2 animate-float" style={{ animationDelay: '2s' }} />
                 <div className="text-2xl font-bold text-foreground">ISO 13485</div>
                 <div className="text-sm text-muted-foreground">Certified</div>
               </div>
-              <div className="text-center">
-                <Users className="h-8 w-8 text-primary mx-auto mb-2" />
+              <div className="text-center animate-fade-in hover:scale-105 transition-all duration-300" style={{ animationDelay: '1.8s' }}>
+                <Users className="h-8 w-8 text-primary mx-auto mb-2 animate-float" style={{ animationDelay: '4s' }} />
                 <div className="text-2xl font-bold text-foreground">500+</div>
                 <div className="text-sm text-muted-foreground">Trusted Partners</div>
               </div>
@@ -80,24 +80,24 @@ const Hero = () => {
           </div>
 
           <div className="relative animate-slide-in">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-elegant">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500">
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-foreground">Why Choose Sorrsha?</h3>
+                <h3 className="text-2xl font-bold text-foreground animate-fade-in" style={{ animationDelay: '0.5s' }}>Why Choose Sorrsha?</h3>
                 <ul className="space-y-4">
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <li className="flex items-start space-x-3 animate-fade-in hover:translate-x-2 transition-transform duration-300" style={{ animationDelay: '0.7s' }}>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 animate-glow-pulse"></div>
                     <span className="text-muted-foreground">FDA approved medical devices</span>
                   </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <li className="flex items-start space-x-3 animate-fade-in hover:translate-x-2 transition-transform duration-300" style={{ animationDelay: '0.9s' }}>
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0 animate-glow-pulse"></div>
                     <span className="text-muted-foreground">24/7 emergency supply chain</span>
                   </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <li className="flex items-start space-x-3 animate-fade-in hover:translate-x-2 transition-transform duration-300" style={{ animationDelay: '1.1s' }}>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 animate-glow-pulse"></div>
                     <span className="text-muted-foreground">Military-grade durability standards</span>
                   </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <li className="flex items-start space-x-3 animate-fade-in hover:translate-x-2 transition-transform duration-300" style={{ animationDelay: '1.3s' }}>
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0 animate-glow-pulse"></div>
                     <span className="text-muted-foreground">Global distribution network</span>
                   </li>
                 </ul>
