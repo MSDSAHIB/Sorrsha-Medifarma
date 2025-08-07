@@ -20,11 +20,6 @@ const FloatingElements = () => {
         <Zap className="w-7 h-7 text-yellow-500" style={{ animationDelay: '1s' }} />
       </div>
       
-      {/* Vibrant gradient orbs with colorful animations */}
-      <div className="absolute top-10 right-1/4 w-32 h-32 bg-gradient-vibrant rounded-full blur-xl animate-colorful-pulse opacity-30"></div>
-      <div className="absolute bottom-10 left-1/4 w-24 h-24 bg-gradient-rainbow rounded-full blur-xl animate-colorful-pulse opacity-30" style={{ animationDelay: '3s' }}></div>
-      <div className="absolute top-1/2 left-10 w-20 h-20 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full blur-xl animate-rainbow-rotate opacity-25" style={{ animationDelay: '1.5s' }}></div>
-      <div className="absolute bottom-1/2 right-20 w-16 h-16 bg-gradient-to-r from-pink-400 to-orange-400 rounded-full blur-xl animate-float-colors opacity-25" style={{ animationDelay: '2.5s' }}></div>
     </div>
   );
 };

@@ -32,7 +32,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <Button variant="hero" size="lg" className="group hover:scale-105 transition-all duration-300 shadow-colorful hover:shadow-rainbow animate-colorful-pulse" onClick={() => navigate('/products')}>
+              <Button variant="hero" size="lg" className="group" onClick={() => navigate('/products')}>
                 Explore Products
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
