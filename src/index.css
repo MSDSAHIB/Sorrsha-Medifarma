@@ -137,8 +137,6 @@ All colors MUST be HSL.
   
   .text-gradient-rainbow {
     @apply bg-gradient-to-r from-blue-500 via-purple-500 via-pink-500 to-teal-400 bg-clip-text text-transparent;
-    background-size: 200% 100%;
-    animation: gradient-shift 4s ease-in-out infinite;
   }
   
   .text-gradient-elegant {
