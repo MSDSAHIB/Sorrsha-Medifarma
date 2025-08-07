@@ -120,7 +120,7 @@ All colors MUST be HSL.
   }
   
   h1 {
-    @apply text-shimmer font-bold tracking-tight;
+    @apply font-bold tracking-tight;
   }
   
   h2 {
@@ -163,8 +163,6 @@ All colors MUST be HSL.
   
   .text-shimmer {
     @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
-    background-size: 200% 100%;
-    animation: shimmer 3s ease-in-out infinite;
   }
   
   .card-hover {
@@ -198,8 +196,6 @@ All colors MUST be HSL.
   
   .gradient-text {
     @apply bg-gradient-to-r from-blue-500 via-purple-500 to-teal-400 bg-clip-text text-transparent;
-    background-size: 200% 100%;
-    animation: gradient-shift 3s ease-in-out infinite;
   }
 }
 
